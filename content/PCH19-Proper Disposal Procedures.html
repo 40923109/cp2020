@@ -1,0 +1,442 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923109 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923109 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='Develop.html'>Develop</a></li></ul><li><a href='PC Hardware (Open + Free) P.121~P.132.html'>PC Hardware (Open + Free) P.121~P.132</a><li class='has-children'><a href='Unit  5- Notebooks and Laptops.html'>Unit  5- Notebooks and Laptops</a><ul class='dropdown'><li class='has-children'><a href='PCH17-Notebook Features and Components.html'>PCH17-Notebook Features and Components</a><ul class='dropdown'><li><a href='Overview--1.html'>Overview--1</a><li><a href='Laptops and Notebooks-.html'>Laptops and Notebooks-</a></li></ul><li class='has-children'><a href='PCH17-Installing and Configuring Laptop Hardware.html'>PCH17-Installing and Configuring Laptop Hardware</a><ul class='dropdown'><li><a href='Expansion-.html'>Expansion-</a></li></ul><li class='has-children'><a href='PCH17-Notebook Features.html'>PCH17-Notebook Features</a><ul class='dropdown'><li><a href='Laptop Displays-.html'>Laptop Displays-</a><li><a href='Device Replacement-.html'>Device Replacement-</a></li></ul><li class='has-children'><a href='PCH18-Laptop and Notebook Component Replacement.html'>PCH18-Laptop and Notebook Component Replacement</a><ul class='dropdown'><li><a href='Overview--2.html'>Overview--2</a><li><a href='Notebook Hard Drives-.html'>Notebook Hard Drives-</a><li><a href='Memory-.html'>Memory-</a></li></ul><li><a href='PCH18-Troubleshooting Hard Drives.html'>PCH18-Troubleshooting Hard Drives</a><li><a href='PCH19-Notebook Power and Physical Security.html'>PCH19-Notebook Power and Physical Security</a><li class='has-children'><a href='PCH19-Overview.html'>PCH19-Overview</a><ul class='dropdown'><li><a href='Battery Types-.html'>Battery Types-</a></li></ul><li><a href='PCH19-AC Power.html'>PCH19-AC Power</a><li><a href='PCH19-Proper Disposal Procedures.html'>PCH19-Proper Disposal Procedures</a><li><a href='PCH19-Security.html'>PCH19-Security</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">PCH19-AC Power << <a href='PCH19-AC Power.html'>Previous</a> <a href='PCH19-Security.html'>Next</a> >> PCH19-Security<br /><h1>PCH19-Proper Disposal Procedures</h1>
+<p><span></span></p>
+<p id="N10693" lang="">Rechargeable laptop batteries contain hazardous materials such as mercury, cadmium, and lead. Many states have laws governing the disposal of batteries containing toxic materials. Often disposing of them in the trash and sending them to a landfill is illegal. Recycling, sometimes referred to as eCycling in the case of computers and other electronics, reduces the amount of toxic elements entering the waste stream and is often the required or preferred disposal method. Recycling saves landfill space, conserves our natural resources, and reduces the amount of electronic waste generated by residents in the state. For example, according to the State of Maryland, eCycling reduces more than 150,000 tons of waste every year. Local regulations (state, county, or city) dictate the proper methods of disposing of the physical laptop and its components.</p>
+<p id="N10696" lang="">If, instead of disposing of the entire laptop, you wish to sell the device, you should first remove your personal information from the laptop. The best way to do this is to perform a hard drive format using overwrite software. This is also known as a “secure erase,” where every portion of the hard disk is rewritten with a “0” in order to fully clear your personal data from the device. Then, if necessary, you can reinstall the operating system and sell the device.</p>
+<p><span></span></p>
+<h5><span>learn by doing-</span></h5>
+<p><span></span></p>
+<p><span>Benito receives a trouble ticket from a customer. It says that every time the customer unplugs her laptop and it operates only on battery, the screen dims. The customer says she can still see the screen, but doesn’t like it too dim. What might Benito do to prevent the laptop display from dimming when it is unplugged?</span></p>
+<p><span><span class="radioContainer clearfix"><input id="582637_i1_rad_0" name="582637_i1_group" type="radio" value="A"/><label class="incorrectPrimary" for="582637_i1_rad_0">Replace the power adapter.</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582637_i1_rad_1" name="582637_i1_group" type="radio" value="B"/><label class="" for="582637_i1_rad_1">Replace the battery.</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582637_i1_rad_2" name="582637_i1_group" type="radio" value="C"/><label class="" for="582637_i1_rad_2">Replace the computer.</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582637_i1_rad_3" name="582637_i1_group" type="radio" value="D"/><label class="" for="582637_i1_rad_3">Configure the laptop settings to display at full brightness when unplugged.</label></span></span></p>
+<p><span></span></p>
+<p><span>(1:Incorrect. It is not necessary to replace the power adapter. Benito can configure the laptop settings to display at full brightness even when the computer is unplugged and operating on full power.</span></p>
+<p><span> 2:</span>Incorrect. It is not necessary to replace the battery. Benito can configure the laptop settings to display at full brightness even when the computer is unplugged and operating on full power.</p>
+<div class="i1">
+<div class="feedback clearfix incorrect"> 3:<span>Incorrect. It is not necessary to replace the computer. Benito can configure the laptop settings to display at full brightness even when the computer is unplugged and operating on full power.</span></div>
+</div>
+<p><span> 4:Correct. Benito can configure the laptop settings to display at full brightness even when the computer is unplugged and operating on full power. This setting will drain the battery more quickly and Benito should advise the customer about this.)</span></p>
+<p><span></span></p>
+<p><span>Hint:A bright display takes more power than a dim display.</span></p>
+<p><span>To conserve battery power, many laptops are preset for the display to dim when the laptop is unplugged and operating on battery only.</span></p>
+<p><span>Power and display settings can be configured manually.</span></p>
+<p><span></span></p>
+<p><span>Which battery display illustrates a battery that still holds 2/9 charge?</span></p>
+<p><span><span class="radioContainer clearfix"><input id="582638_i1_rad_0" name="582638_i1_group" type="radio" value="A"/><label class="incorrectPrimary" for="582638_i1_rad_0"></label></span></span></p>
+<div class="image shouldbeleft"><img alt="Copyright: &lt;a                 href='http://www.123rf.com/profile_ladyann'&gt;ladyann / 123RF Stock                 Photo&lt;/a&gt;" class="popimg" id="N10080" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH19/webcontent/PCH19/image4.png" style="margin: 0px; padding: 0px; outline: 0px; vertical-align: middle; border: none; cursor: pointer;" title="Copyright: &lt;a                 href='http://www.123rf.com/profile_ladyann'&gt;ladyann / 123RF Stock                 Photo&lt;/a&gt;"/></div>
+<p><span><span class="radioContainer clearfix"><label class="incorrectPrimary" for="582638_i1_rad_0"></label></span><span class="radioContainer clearfix"><input id="582638_i1_rad_1" name="582638_i1_group" type="radio" value="B"/><label class="" for="582638_i1_rad_1"></label></span></span></p>
+<div class="image shouldbeleft"><img alt="Copyright: &lt;a                 href='http://www.123rf.com/profile_ladyann'&gt;ladyann / 123RF Stock                 Photo&lt;/a&gt;" class="popimg" id="N10086" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH19/webcontent/PCH19/image5.png" style="margin: 0px; padding: 0px; outline: 0px; vertical-align: middle; border: none; cursor: pointer;" title="Copyright: &lt;a                 href='http://www.123rf.com/profile_ladyann'&gt;ladyann / 123RF Stock                 Photo&lt;/a&gt;"/></div>
+<p><span><span class="radioContainer clearfix"><label class="" for="582638_i1_rad_1"></label></span><span class="radioContainer clearfix"><input id="582638_i1_rad_2" name="582638_i1_group" type="radio" value="C"/><label class="" for="582638_i1_rad_2"></label></span></span></p>
+<div class="image shouldbeleft"><img alt="Copyright: &lt;a                 href='http://www.123rf.com/profile_ladyann'&gt;ladyann / 123RF Stock                 Photo&lt;/a&gt;" class="popimg" id="N1008C" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH19/webcontent/PCH19/image6.png" style="margin: 0px; padding: 0px; outline: 0px; vertical-align: middle; border: none; cursor: pointer;" title="Copyright: &lt;a                 href='http://www.123rf.com/profile_ladyann'&gt;ladyann / 123RF Stock                 Photo&lt;/a&gt;"/></div>
+<p><span><span class="radioContainer clearfix"><label class="" for="582638_i1_rad_2"></label></span><span class="radioContainer clearfix"><input id="582638_i1_rad_3" name="582638_i1_group" type="radio" value="D"/><label class="" for="582638_i1_rad_3"></label></span></span></p>
+<div class="image shouldbeleft"><img alt="Copyright: &lt;a                 href='http://www.123rf.com/profile_ladyann'&gt;ladyann / 123RF Stock                 Photo&lt;/a&gt;" class="popimg" id="N10092" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH19/webcontent/PCH19/image7.png" style="margin: 0px; padding: 0px; outline: 0px; vertical-align: middle; border: none; cursor: pointer;" title="Copyright: &lt;a                 href='http://www.123rf.com/profile_ladyann'&gt;ladyann / 123RF Stock                 Photo&lt;/a&gt;"/></div>
+<p><span></span></p>
+<p><span>(1:Incorrect. This battery indicator is displaying nine green bars out of a possible nine bars, illustrating that the battery is fully charged.</span></p>
+<p><span> 2:Incorrect. This battery indicator is displaying seven green bars out of a possible nine bars, illustrating that the battery is 7/9ths charged.</span></p>
+<p><span> 3:Correct. This battery indicator is displaying two out of nine green bars, illustrating that the battery is 2/9ths charged.</span></p>
+<p><span> 4:Incorrect. This battery indicator is displaying one red bar, illustrating that the battery is 1/9th charged.)</span></p>
+<p><span></span></p>
+<p><span>Hint:Each colored bar displays a portion of the battery charge.</span></p>
+<p><span>Count the number of green bars in the display that is fully lit up. You will see there are a total of nine green bars. The full display illustrates that the battery is fully charged.</span></p>
+<p><span>When the display is not fully lit, count the number of colored bars (x). The number of colored bars over the number of possible bars (nine) is the proportion of the battery’s charge (x/9).</span></p>
+<p><span> </span></p>
+<p><span>Janice noticed that the battery in her old laptop used to hold a charge that enabled her to use her laptop for four hours without plugging it into a wall outlet. She only needed to use the computer for that long without plugging it in when she traveled. Most of the time she would just need to use her computer on battery-only for about an hour at a time, and would then plug her laptop into the wall outlet. Now, her battery only holds a charge that enables her to use her laptop for about an hour without plugging it into a wall outlet and it really is not useful when she travels. What could be the most likely cause of Janice’s laptop’s diminished battery life?</span></p>
+<p><span><span class="radioContainer clearfix"><input id="582639_i1_rad_0" name="582639_i1_group" type="radio" value="A"/><label for="582639_i1_rad_0">The memory effect.</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582639_i1_rad_1" name="582639_i1_group" type="radio" value="B"/><label for="582639_i1_rad_1">Too much battery use.</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582639_i1_rad_2" name="582639_i1_group" type="radio" value="C"/><label for="582639_i1_rad_2">Too much travel.</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582639_i1_rad_3" name="582639_i1_group" type="radio" value="D"/><label for="582639_i1_rad_3">None of the above.</label></span></span></p>
+<p><span></span></p>
+<p><span>(1:Correct. The “memory effect” can occur in older NiCad batteries when a user plugs in a battery for recharge before it is able to fully discharge. Janice admitted to recharging her battery before the battery fully discharged.</span></p>
+<p><span> 2:Incorrect. The “memory effect” is likely the issue. It can occur in older NiCad batteries when a user plugs in a battery for recharge before it is able to fully discharge. Janice admitted to recharging her battery before the battery fully discharged.</span></p>
+<p><span> 3:Incorrect. The “memory effect” is likely the issue. It can occur in older NiCad batteries when a user plugs in a battery for recharge before it is able to fully discharge. Janice admitted to recharging her battery before the battery fully discharged.</span></p>
+<p><span> 4:Incorrect. The “memory effect” is likely the issue. It can occur in older NiCad batteries when a user plugs in a battery for recharge before it is able to fully discharge. Janice admitted to recharging her battery before the battery fully discharged.)</span></p>
+<p><span></span></p>
+<p><span></span>Hint:<span>Older computers usually had nickel-cadmium (NiCad) batteries and they suffered from the “memory effect.”</span></p>
+<p><span>The “memory effect” occurs when a user plugs in a battery for recharge before it was able to fully discharge.</span></p>
+<p><span>Janice admitted to recharging her battery before the battery fully discharged.</span></p>
+<p><span></span></p>
+<div>
+<p id="N100B9" lang="">ABC, Inc., is located in Towson, Maryland. It is upgrading all of its laptops to notebook computers. Your boss has asked you to find a place to safely dispose of the laptop batteries. Research where you can safely dispose of rechargeable batteries.</p>
+</div>
+<div class="A">
+<div class="component normal highlight">
+<div>
+<div>
+<p id="N100B9" lang=""></p>
+<p lang="">Hint:<span>Go to the Maryland Department of the Environment Waste Division to learn more about disposal laws.</span></p>
+<p lang=""><span>Try searching online for rechargeable battery disposal locations near Towson, Maryland.</span></p>
+</div>
+<div class="A">
+<div class="component normal highlight"><span>Use resources such as http://recyclenation.com to find recycling locations near a specific ZIP code.</span></div>
+</div>
+</div>
+<div class="A">
+<div class="component normal highlight"></div>
+</div>
+</div>
+</div>
+<div></div>
+<div>True or False: Because rechargeable laptop batteries contain toxic chemicals, they cannot be recycled.</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582641_i1_rad_0" name="582641_i1_group" type="radio" value="A"/><label class="incorrectPrimary" for="582641_i1_rad_0">True</label></span></div>
+<div class="component"><span class="radioContainer clearfix"><input id="582641_i1_rad_1" name="582641_i1_group" type="radio" value="B"/><label class="" for="582641_i1_rad_1">False</label></span></div>
+</div>
+<p><span> </span></p>
+<p><span>(T:Incorrect. Because rechargeable batteries contain toxic chemicals, recycling is the best disposal method.</span></p>
+<p><span> F:Correct. Because rechargeable batteries contain toxic chemicals, recycling is the best disposal method.)</span></p>
+<p><span></span></p>
+<p><span>Hint:Throwing toxic chemicals into the trash may be illegal in some localities.</span></p>
+<p><span>Because rechargeable batteries contain toxic chemicals, recycling is the best disposal method.</span></p>
+<p><span></span></p>
+<h5><span></span>did I get this-</h5>
+<p><span></span></p>
+<div>True or False: A laptop’s power adapter converts DC power to AC power.</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582625_i1_rad_0" name="582625_i1_group" type="radio" value="A"/><label for="582625_i1_rad_0">True</label></span></div>
+<div class="component"><span class="radioContainer clearfix"><input id="582625_i1_rad_1" name="582625_i1_group" type="radio" value="B"/><label for="582625_i1_rad_1">False</label></span></div>
+<div class="component"><span class="radioContainer clearfix"></span></div>
+<div class="component"><span class="radioContainer clearfix">(T:<span>Incorrect. A laptop’s power adapter converts AC power to DC power. It does not convert DC power to AC power.</span></span></div>
+<div class="component"><span class="radioContainer clearfix"> F:<span>Correct. A laptop’s power adapter converts AC power to DC power. It does not convert DC power to AC power.</span>)</span></div>
+</div>
+<p><span> </span></p>
+<div>True or False: Even when a laptop is plugged into a docking station, the laptop is still being powered by its battery.</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582626_i1_rad_0" name="582626_i1_group" type="radio" value="A"/><label for="582626_i1_rad_0">True</label></span></div>
+<div class="component"><span class="radioContainer clearfix"><input id="582626_i1_rad_1" name="582626_i1_group" type="radio" value="B"/><label for="582626_i1_rad_1">False</label></span></div>
+</div>
+<p><span></span></p>
+<p><span>(T:Correct. If the laptop is using a docking station, it still uses the battery to power the laptop, and the docking station to charge the laptop’s battery.</span></p>
+<p><span> F:Incorrect. If the laptop is using a docking station, it still uses the battery to power the laptop, and the docking station to charge the laptop’s battery.)</span></p>
+<p><span></span></p>
+<div>Sarah is provisioning new laptops to replace a company’s PCs. When Sarah gives a new laptop to employees, she tells each user how to safely and properly care for the laptops’ batteries to maintain peak performance. Which of the following is not something Sarah should tell the laptop users?</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582627_i1_rad_0" name="582627_i1_group" type="radio" value="A"/><label for="582627_i1_rad_0">Never use an unapproved battery in the laptop, as doing so can lead to the notebook catching fire or exploding.</label></span></div>
+<div class="component"><span class="radioContainer clearfix"><input id="582627_i1_rad_1" name="582627_i1_group" type="radio" value="B"/><label for="582627_i1_rad_1">In order to maintain the battery at its peak operating efficiency, users should make sure that their laptops are kept at room temperature and avoid heat.</label></span></div>
+<div class="component"><span class="radioContainer clearfix"><input id="582627_i1_rad_2" name="582627_i1_group" type="radio" value="C"/><label for="582627_i1_rad_2">The longevity of the laptop battery will decrease if it is exposed to high temperatures.</label></span></div>
+<div class="component"><span class="radioContainer clearfix"><input id="582627_i1_rad_3" name="582627_i1_group" type="radio" value="D"/><label for="582627_i1_rad_3">If the user plans to store the laptop for a long duration of time, the battery should be fully charged prior to storage.</label></span></div>
+</div>
+<p><span></span></p>
+<p><span>(1:Incorrect. The prohibition against using an unapproved battery is something Sarah should share with employees. </span></p>
+<p><span> 2:Incorrect. Sarah should discuss storing laptops at the proper temperature to maintain peak battery operating efficiency.</span></p>
+<p><span> 3:Incorrect. Sarah should discuss the effect of high temperatures on the battery. </span></p>
+<p><span> 4:Correct. Sarah should tell the customer to discharge the battery to 50 percent before storing it for a long time.)</span></p>
+<p><span></span></p>
+<h4 class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">PCH19-正確的處置程序</span></h4>
+<pre>筆記本電腦可充電電池包含有害物質，例如汞，鎘和鉛。許多州都有管理含毒物質電池處置的法律。通常，<br/>將它們丟棄在垃圾桶中並送到垃圾填埋場是非法的。回收利用，有時在計算機和其他電子設備中也稱為“回收<br/>利用”，可減少進入廢物流的有毒元素的數量，通常是必需或首選的處理方法。回收利用可節省垃圾填埋場的<br/>空間，節約我們的自然資源，並減少該州居民產生的電子廢物量。例如，據馬里蘭州稱，eCycling每年減少<br/>了15萬噸以上的廢物。當地法規（州，縣或市）規定了處置物理筆記本電腦及其組件的正確方法。<br/><br/></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">如果您想出售設備而不是丟棄整個筆記本電腦，則應首先從筆記本電腦中刪除個人信息。最好的方法是使用<br/>覆蓋軟件執行硬盤驅動器格式。這也稱為“安全擦除”，其中硬盤的每個部分都用“ 0”重寫，以便從設備中完<br/>全清除您的個人數據。然後，如有必要，您可以重新安裝操作系統並出售設備。<br/><br/></span></pre>
+<h5 class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">通過實踐學習-</span></h5>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><br/><span>貝尼託收到客戶的故障單。它說，每當客戶拔出筆記本電腦的電源並且僅依靠電池供電時，屏幕就會變暗。客戶說她仍然可以看到屏幕，但不喜歡它太暗。貝尼托可以採取哪些措施來防止筆記本電腦的顯示器在拔下電源時變暗？</span></p>
+<p><span><span class="radioContainer clearfix"><input id="582637_i1_rad_0" name="582637_i1_group" type="radio" value="A"/></span></span><span lang="zh-TW">更換電源適配器。</span></p>
+<p><span><span class="radioContainer clearfix"><input id="582637_i1_rad_1" name="582637_i1_group" type="radio" value="B"/>更換電池。</span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582637_i1_rad_2" name="582637_i1_group" type="radio" value="C"/></span></span><span lang="zh-TW">更換計算機。</span></p>
+<p><span><span class="radioContainer clearfix"><input id="582637_i1_rad_3" name="582637_i1_group" type="radio" value="D"/>配置便攜式計算機設置，使其在拔出電源時以全亮度顯示。</span></span></p>
+<p><span></span></p>
+<p><span>(1:</span><span lang="zh-TW">不正確。無需更換電源適配器。 Benito可以將筆記本電腦設置配置為以全亮度顯示，即使在拔下計算機電源並以全功率運行時也是如此。</span></p>
+<p><span> 2:</span><span lang="zh-TW">不正確。無需更換電池。 Benito可以將筆記本電腦設置配置為以全亮度顯示，即使在拔下計算機電源並以全功率運行時也是如此。</span></p>
+<div class="i1">
+<div class="feedback clearfix incorrect"> 3:不正確。無需更換計算機。 Benito可以將筆記本電腦設置配置為以全亮度顯示，即使在拔下計算機電源並以全功率運行時也是如此。</div>
+</div>
+<p><span> 4:</span><span lang="zh-TW">正確。 Benito可以將筆記本電腦設置配置為以全亮度顯示，即使在拔下計算機電源並以全功率運行時也是如此。此設置將更快地耗盡電池電量，Benito應將此告知客戶。</span><span>)</span></p>
+<p><span></span></p>
+<p><span>提示:</span><span lang="zh-TW">明亮的顯示器比昏暗的顯示器需要更多的功率。</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">為了節省電池電量，許多筆記本電腦已預設為在拔下筆記本電腦並僅使用電池供電時使顯示器變暗。</span></pre>
+<p><span>電源和顯示設置可以手動配置。</span></p>
+<p><span></span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">哪個電池顯示電量仍然為2/9的電池？</span></pre>
+<p><span><span class="radioContainer clearfix"><input id="582638_i1_rad_0" name="582638_i1_group" type="radio" value="A"/><label class="incorrectPrimary" for="582638_i1_rad_0"></label></span></span></p>
+<div class="image shouldbeleft"><img alt="Copyright: &lt;a                 href='http://www.123rf.com/profile_ladyann'&gt;ladyann / 123RF Stock                 Photo&lt;/a&gt;" class="popimg" id="N10080" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH19/webcontent/PCH19/image4.png" style="margin: 0px; padding: 0px; outline: 0px; vertical-align: middle; border: none; cursor: pointer;" title="Copyright: &lt;a                 href='http://www.123rf.com/profile_ladyann'&gt;ladyann / 123RF Stock                 Photo&lt;/a&gt;"/></div>
+<p><span><span class="radioContainer clearfix"><label class="incorrectPrimary" for="582638_i1_rad_0"></label></span><span class="radioContainer clearfix"><input id="582638_i1_rad_1" name="582638_i1_group" type="radio" value="B"/><label class="" for="582638_i1_rad_1"></label></span></span></p>
+<div class="image shouldbeleft"><img alt="Copyright: &lt;a                 href='http://www.123rf.com/profile_ladyann'&gt;ladyann / 123RF Stock                 Photo&lt;/a&gt;" class="popimg" id="N10086" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH19/webcontent/PCH19/image5.png" style="margin: 0px; padding: 0px; outline: 0px; vertical-align: middle; border: none; cursor: pointer;" title="Copyright: &lt;a                 href='http://www.123rf.com/profile_ladyann'&gt;ladyann / 123RF Stock                 Photo&lt;/a&gt;"/></div>
+<p><span><span class="radioContainer clearfix"><label class="" for="582638_i1_rad_1"></label></span><span class="radioContainer clearfix"><input id="582638_i1_rad_2" name="582638_i1_group" type="radio" value="C"/><label class="" for="582638_i1_rad_2"></label></span></span></p>
+<div class="image shouldbeleft"><img alt="Copyright: &lt;a                 href='http://www.123rf.com/profile_ladyann'&gt;ladyann / 123RF Stock                 Photo&lt;/a&gt;" class="popimg" id="N1008C" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH19/webcontent/PCH19/image6.png" style="margin: 0px; padding: 0px; outline: 0px; vertical-align: middle; border: none; cursor: pointer;" title="Copyright: &lt;a                 href='http://www.123rf.com/profile_ladyann'&gt;ladyann / 123RF Stock                 Photo&lt;/a&gt;"/></div>
+<p><span><span class="radioContainer clearfix"><label class="" for="582638_i1_rad_2"></label></span><span class="radioContainer clearfix"><input id="582638_i1_rad_3" name="582638_i1_group" type="radio" value="D"/><label class="" for="582638_i1_rad_3"></label></span></span></p>
+<div class="image shouldbeleft"><img alt="Copyright: &lt;a                 href='http://www.123rf.com/profile_ladyann'&gt;ladyann / 123RF Stock                 Photo&lt;/a&gt;" class="popimg" id="N10092" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH19/webcontent/PCH19/image7.png" style="margin: 0px; padding: 0px; outline: 0px; vertical-align: middle; border: none; cursor: pointer;" title="Copyright: &lt;a                 href='http://www.123rf.com/profile_ladyann'&gt;ladyann / 123RF Stock                 Photo&lt;/a&gt;"/></div>
+<p><span></span></p>
+<p><span>(1:</span><span lang="zh-TW">不正確。該電池指示器在可能的九個條中顯示九個綠色條，表明電池已充滿電。</span></p>
+<p><span> 2:</span><span lang="zh-TW">不正確。該電池指示器正在顯示的九個綠色條中顯示七個綠色條，表明電池已充電7/9倍。</span></p>
+<p><span> 3:正確。該電池指示器顯示九個綠色條中的兩個，表明電池的電量是電池的2/9倍。</span></p>
+<p><span> 4:</span><span lang="zh-TW">不正確。該電池指示器顯示一個紅色條，說明該電池已充滿1/9電量。</span><span>)</span></p>
+<p><span></span></p>
+<p><span>提示:每個彩色條顯示一部分電池電量。</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">計算完全點亮的顯示屏中綠色條的數量。您將看到總共有九個綠色條。完整的顯示說明電池已充滿電。</span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">當顯示屏未完全點亮時，計算彩色條的數量（x）。彩色條的數量超過可能的條數量（九）是電池電量的比例（x / 9）。</span></pre>
+<p><span> </span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">珍妮絲（Janice）注意到，舊筆記本電腦中的電池曾經用來充電，這使她能夠在不將其插入牆上電源插座的<br/>情況下使用筆記本電腦四個小時。她只需要長時間使用計算機，而不必在旅行時插入計算機。在大多數情況<br/>下，她只需要一次僅使用電池供電一次即可使用計算機，然後將筆記本電腦插入牆上的電源插座。現在，她<br/>的電池只能充滿電，這樣她就可以使用筆記本電腦大約一個小時而無需將其插入牆上的電源插座，並且在旅<br/>行時確實沒有用。 Janice筆記本電腦的電池壽命縮短的最可能原因是什麼？</span></pre>
+<p><span><span class="radioContainer clearfix"><input id="582639_i1_rad_0" name="582639_i1_group" type="radio" value="A"/>記憶效應。</span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582639_i1_rad_1" name="582639_i1_group" type="radio" value="B"/>電池消耗過多。</span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582639_i1_rad_2" name="582639_i1_group" type="radio" value="C"/></span></span><span lang="zh-TW">太多的旅行。</span></p>
+<p><span><span class="radioContainer clearfix"><input id="582639_i1_rad_3" name="582639_i1_group" type="radio" value="D"/></span></span><span lang="zh-TW">以上都不是。</span></p>
+<p><span></span></p>
+<p><span>(1:</span><span lang="zh-TW">正確。當用戶在電池無法完全放電之前插入電池進行充電時，“記憶效應”會出現在較舊的NiCad電池中。珍妮絲（Janice）承認在電池完全放電之前為她的電池充電。</span></p>
+<p><span> 2:不正確。“內存效應”可能是問題所在。如果用戶在完全放電之前插入電池進行充電，則可能會在舊版NiCad電池中發生。珍妮絲（Janice）承認在電池完全放電之前為她的電池充電。</span></p>
+<p><span> 3:不正確。“內存效應”可能是問題所在。如果用戶在完全放電之前插入電池進行充電，則可能會在舊版NiCad電池中發生。珍妮絲（Janice）承認在電池完全放電之前為她的電池充電。</span></p>
+<p><span> 4:不正確。“內存效應”可能是問題所在。如果用戶在完全放電之前插入電池進行充電，則可能會在舊版NiCad電池中發生。珍妮絲（Janice）承認在電池完全放電之前為她的電池充電。)</span></p>
+<p><span></span></p>
+<p><span></span>Hint:<span lang="zh-TW">較舊的計算機通常裝有鎳鎘（NiCad）電池，因此會遭受“記憶效應”的困擾。</span></p>
+<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">當用戶在電池無法完全放電之前插入電池進行充電時，就會發生“記憶效應”。</span></pre>
+</div>
+<p><span>珍妮絲（Janice）承認在電池完全放電之前為她的電池充電。</span></p>
+<p><span></span></p>
+<div>
+<p id="N100B9" lang=""><span>ABC，Inc.位於馬里蘭州陶森。它將所有筆記本電腦升級為筆記本電腦。您的老闆已要求您找到安全處置筆記本電池的地方。研究可以安全處置充電電池的地方。</span></p>
+</div>
+<div class="A">
+<div class="component normal highlight">
+<div>
+<div>
+<p lang=""></p>
+<p lang="">Hint:<span lang="zh-TW">請訪問馬里蘭州環境廢物部門，以了解有關處置法律的更多信息。</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">嘗試在線搜索馬里蘭州陶森附近的可充電電池處置地點。</span></pre>
+</div>
+<div class="A">
+<div class="component normal highlight"><span>使用諸如http://recyclenation.com之類的資源來查找特定郵政編碼附近的回收地點。</span></div>
+</div>
+</div>
+<div class="A">
+<div class="component normal highlight"></div>
+</div>
+</div>
+</div>
+<div></div>
+<div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">是非題：由於筆記本電腦可充電電池包含有毒化學物質，因此無法回收。</span></pre>
+</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582641_i1_rad_0" name="582641_i1_group" type="radio" value="A"/><label class="incorrectPrimary" for="582641_i1_rad_0">正確</label></span></div>
+<div class="component"><span class="radioContainer clearfix"><input id="582641_i1_rad_1" name="582641_i1_group" type="radio" value="B"/>錯誤</span></div>
+</div>
+<p><span> </span></p>
+<p><span>(正確:不正確。由於可充電電池包含有毒化學物質，因此回收是最好的處置方法。</span></p>
+<p><span> 錯誤:</span><span lang="zh-TW">正確。由於可充電電池包含有毒化學物質，因此回收是最好的處置方法。</span><span>)</span></p>
+<p><span></span></p>
+<p><span>Hint:</span><span lang="zh-TW">在某些地區，將有毒化學物品扔進垃圾桶可能是非法的。</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">由於可充電電池包含有毒化學物質，因此回收是最好的處置方法。</span></pre>
+<p><span></span></p>
+<h5><span></span>did I get this-</h5>
+<p><span></span></p>
+<div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">是非題：筆記本電腦的電源適配器將直流電轉換為交流電。</span></pre>
+</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582625_i1_rad_0" name="582625_i1_group" type="radio" value="A"/>正確</span></div>
+<div class="component"><span class="radioContainer clearfix"><input id="582625_i1_rad_1" name="582625_i1_group" type="radio" value="B"/>錯誤</span></div>
+<div class="component"><span class="radioContainer clearfix"></span></div>
+<div class="component"><span class="radioContainer clearfix"><span class="radioContainer clearfix">(正確:</span></span>不正確。筆記本電腦的電源適配器將交流電轉換為直流電。它不會將直流電轉換為交流電。</div>
+<div class="component"><span class="radioContainer clearfix"><span class="radioContainer clearfix"> 錯誤:正確。筆記本電腦的電源適配器將交流電轉換為直流電。它不會將直流電轉換為交流電。</span></span><span class="radioContainer clearfix">)</span></div>
+</div>
+<p><span> </span></p>
+<div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">是非題：即使將便攜式計算機插入擴展塢，便攜式計算機仍將由其電池供電。</span></pre>
+</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582626_i1_rad_0" name="582626_i1_group" type="radio" value="A"/><label for="582626_i1_rad_0">正確</label></span></div>
+<div class="component"><span class="radioContainer clearfix"><input id="582626_i1_rad_1" name="582626_i1_group" type="radio" value="B"/>錯誤</span></div>
+</div>
+<p><span></span></p>
+<p><span>(正確:正確。如果筆記本電腦使用的是擴展塢，它仍然會使用電池為筆記本電腦供電，而擴展塢則使用筆記本電腦的電池充電。</span></p>
+<p><span> 錯誤:不正確。如果筆記本電腦使用的是擴展塢，它仍然會使用電池為筆記本電腦供電，而擴展塢則使用筆記本電腦的電池充電。)</span></p>
+<p><span></span></p>
+<div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">薩拉（Sarah）正在配置新的筆記本電腦，以替換公司的PC。莎拉（Sarah）向員工提供一台新筆記本電腦時<br/>，她會告訴每個用戶如何安全正確地保養筆記本電腦的電池以保持最佳性能。 Sarah不應該告訴筆記本電腦<br/>用戶以下哪項？</span></pre>
+</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><span class="radioContainer clearfix"><input id="582627_i1_rad_0" name="582627_i1_group" type="radio" value="A"/>切勿在筆記本電腦中使用未經許可的電池，否則可能導致筆記本電腦著火或爆炸。</span></span></div>
+<div class="component">
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><input id="582627_i1_rad_0" name="582627_i1_group" type="radio" value="A"/>為了將電池保持在最高運行效率，用戶應確保筆記本電腦保持在室溫下並避免發熱。</span></pre>
+</div>
+<div class="component"><span class="radioContainer clearfix"><span class="radioContainer clearfix"><input id="582627_i1_rad_2" name="582627_i1_group" type="radio" value="C"/>如果筆記本電池暴露在高溫下，則其壽命會降低。</span></span></div>
+<div class="component"><span class="radioContainer clearfix"><span class="radioContainer clearfix"><input id="582627_i1_rad_3" name="582627_i1_group" type="radio" value="D"/>如果用戶計劃長時間存放筆記本電腦，則在存放之前應將電池充滿電。</span></span></div>
+</div>
+<p><span></span></p>
+<p><span>(1:不正確。禁止使用未經許可的電池是莎拉應與員工分享的內容。</span></p>
+<p><span> 2:</span><span lang="zh-TW">不正確。莎拉應討論將筆記本電腦存放在適當的溫度下，以保持峰值電池工作效率。</span></p>
+<p><span> 3:</span><span lang="zh-TW">不正確。莎拉應討論高溫對電池的影響。</span></p>
+<p><span> 4:</span><span lang="zh-TW">正確。 Sarah應該告訴客戶將電池放電至50％，然後再長時間存放。</span><span>)</span></p>
+<br />PCH19-AC Power << <a href='PCH19-AC Power.html'>Previous</a> <a href='PCH19-Security.html'>Next</a> >> PCH19-Security</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

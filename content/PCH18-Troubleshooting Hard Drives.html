@@ -1,0 +1,298 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923109 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923109 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='Develop.html'>Develop</a></li></ul><li><a href='PC Hardware (Open + Free) P.121~P.132.html'>PC Hardware (Open + Free) P.121~P.132</a><li class='has-children'><a href='Unit  5- Notebooks and Laptops.html'>Unit  5- Notebooks and Laptops</a><ul class='dropdown'><li class='has-children'><a href='PCH17-Notebook Features and Components.html'>PCH17-Notebook Features and Components</a><ul class='dropdown'><li><a href='Overview--1.html'>Overview--1</a><li><a href='Laptops and Notebooks-.html'>Laptops and Notebooks-</a></li></ul><li class='has-children'><a href='PCH17-Installing and Configuring Laptop Hardware.html'>PCH17-Installing and Configuring Laptop Hardware</a><ul class='dropdown'><li><a href='Expansion-.html'>Expansion-</a></li></ul><li class='has-children'><a href='PCH17-Notebook Features.html'>PCH17-Notebook Features</a><ul class='dropdown'><li><a href='Laptop Displays-.html'>Laptop Displays-</a><li><a href='Device Replacement-.html'>Device Replacement-</a></li></ul><li class='has-children'><a href='PCH18-Laptop and Notebook Component Replacement.html'>PCH18-Laptop and Notebook Component Replacement</a><ul class='dropdown'><li><a href='Overview--2.html'>Overview--2</a><li><a href='Notebook Hard Drives-.html'>Notebook Hard Drives-</a><li><a href='Memory-.html'>Memory-</a></li></ul><li><a href='PCH18-Troubleshooting Hard Drives.html'>PCH18-Troubleshooting Hard Drives</a><li><a href='PCH19-Notebook Power and Physical Security.html'>PCH19-Notebook Power and Physical Security</a><li class='has-children'><a href='PCH19-Overview.html'>PCH19-Overview</a><ul class='dropdown'><li><a href='Battery Types-.html'>Battery Types-</a></li></ul><li><a href='PCH19-AC Power.html'>PCH19-AC Power</a><li><a href='PCH19-Proper Disposal Procedures.html'>PCH19-Proper Disposal Procedures</a><li><a href='PCH19-Security.html'>PCH19-Security</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">Memory- << <a href='Memory-.html'>Previous</a> <a href='PCH19-Notebook Power and Physical Security.html'>Next</a> >> PCH19-Notebook Power and Physical Security<br /><h1>PCH18-Troubleshooting Hard Drives</h1>
+<p><span></span></p>
+<p></p>
+<p>Hard drive failures are fairly uncommon occurrences for computers overall, but in laptops they have a higher occurrence rate than in desktops. Usually, this occurs when something jars the laptop while the hard disk is working. Another cause of hard drive failure is an overheated hard drive. The hard drive, like other devices in the computer, requires adequate cooling to ensure proper operation. If the hard drive overheats, you need to check to see if the laptop is receiving adequate cooling. You can do this by making sure the air intake and fans are working properly and are not filled with dust.<br/><span></span></p>
+<p id="N10693" lang="">Mechanical failures and defects are another possible cause of hard drive failure in laptops and notebooks. Bad sectors in the hard disk, the motor’s failure to perform rotation, power supply issues, and many other issues can cause hard drive failures. An old hard disk may create problems, or mechanical failure can occur if you have formatted the hard disk too many times. Normally, you can hear a mechanical failure — there may be a clicking sound coming from the disk, or you will hear the disk fail to “spin up” when powered on.</p>
+<p id="N10696" lang="">Other issues with hard drives include data becoming corrupted or invalid due to virus infection or attacks, abnormal system shutdown, accidental cancellation of a running program, frequent power failure, and many other causes. These are not issues solely in laptops; these problems can occur with both laptop and desktop models.</p>
+<p id="N10699" lang="">To determine if a laptop hard drive has failed, you must follow a logical troubleshooting methodology. First, attempt to boot up the computer. If you cannot see the display working, then listen for the hard disk. Did you hear it “spin up” when you powered on the machine? If not, it is likely a laptop power issue and not a hard drive issue. Check the battery and the AC adapter to ensure the laptop is receiving power.</p>
+<p id="N1069C" lang="">If the laptop display did turn on, then you need to see if the operating system boots. If it does not boot, it could be a data corruption issue or a hard drive failure. First, try booting the laptop from the AC adapter instead of the battery. Did that work? If so, it may be that the battery isn’t providing enough power to spin the hard drive properly. If that does not work, next, check the BIOS to see if the hard drive is being recognized. If the drive is not recognized in the BIOS, check the physical connections (power and data cables, like IDE/PATA and SATA). If the hard drive is recognized in the BIOS, but the operating system does not boot, it could be that the data on the drive has become corrupted; therefore, the operating system may need to be reinstalled and the user data may need to be restored from backup.</p>
+<p id="N1069F" lang="">If the drive isn’t recognized by the BIOS or loading the operating system, you may have a hard drive failure. Listen to the hard drive; do you hear a mechanical clicking sound? If you do, your hard drive is likely failing and should be replaced as soon as possible. If you do not hear any clicking noises, there might be bad sectors on the disk, so perform disk maintenance procedures, such as “check disk” (CHKDSK) or “disk defragmentation” (DISK DEFRAG).</p>
+<p><span></span></p>
+<h5><span></span>learn by doing-</h5>
+<p><span></span></p>
+<p><span>Tony has just installed a new traditional hard drive in his laptop computer. He boots up the machine, but the drive isn’t recognized. Which is not a possible reason for the error?</span></p>
+<p><span><span class="radioContainer clearfix"><input id="582785_i1_rad_0" name="582785_i1_group" type="radio" value="A"/><label for="582785_i1_rad_0">A failed hard drive.</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582785_i1_rad_1" name="582785_i1_group" type="radio" value="B"/><label for="582785_i1_rad_1">Improper cable connection to the motherboard.</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582785_i1_rad_2" name="582785_i1_group" type="radio" value="C"/><label for="582785_i1_rad_2">Weak laptop battery.</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582785_i1_rad_3" name="582785_i1_group" type="radio" value="D"/><label for="582785_i1_rad_3">Dim screen display.</label></span></span></p>
+<p><span></span></p>
+<p><span>(1:Incorrect. If there is a hard drive failure, the hard drive will not be recognized by the operating system.</span></p>
+<p><span> 2:Incorrect. If the drive is not properly connected to the motherboard, it may not be able to power up properly, which would result in the OS not recognizing the drive.</span></p>
+<p><span> 3:Incorrect. If the laptop battery is weak, it may not provide enough power to spin the hard drive properly.</span></p>
+<p><span> 4:Correct. A dim screen display is not a reason for the OS to not recognize the hard drive.)</span></p>
+<p><span></span></p>
+<p><span></span>Hint:<span>If the drive has failed, it will not be recognized by the operating system.</span></p>
+<p><span>If the laptop battery is weak, it may not provide enough power to spin the hard drive properly.</span></p>
+<p><span>A dim screen display is not a reason for the OS to not recognize the hard drive.</span></p>
+<p><span></span></p>
+<p><span>Hard drive errors are relatively uncommon in computers, but they occur more frequently in <span class="i1"> <span class="component"><select id="i1">
+<option id="i1_EMPTY_CHOICE" value="">--</option>
+<option id="i1_opt_0" value="A">Laptops</option>
+<option id="i1_opt_1" value="B">Desktops</option>
+<option id="i1_opt_2" value="C">Workstations</option>
+</select></span><a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH18/x-oli-workbook_page/javascript();" rel="556612" title="Click for hint"></a></span><span><span> </span>than in<span> </span></span><span class="i2"> <span class="component"><select id="i2">
+<option id="i2_EMPTY_CHOICE" value="">--</option>
+<option id="i2_opt_0" value="A">Laptops</option>
+<option id="i2_opt_1" value="B">Desktops</option>
+</select></span><a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH18/x-oli-workbook_page/javascript();" rel="556613" title="Click for hint"></a></span></span></p>
+<p><span></span></p>
+<p><span></span>(Laptops:<span>Correct. Hard drive failures are fairly uncommon occurrences for computers overall, but in laptops they have a higher occurrence rate than in desktops.</span></p>
+<p> Desktops:<span>Incorrect. Hard drive failures are fairly uncommon occurrences for computers overall, but in laptops they have a higher occurrence rate than in desktops.</span></p>
+<p><span></span> Workstations:<span>Incorrect. Hard drive failures are fairly uncommon occurrences for computers overall, but in laptops they have a higher occurrence rate than in desktops.)</span></p>
+<p><span></span></p>
+<p><span>(Laptops:Incorrect. Hard drive failures are fairly uncommon occurrences for computers overall, but in desktops they have a lower occurrence rate than in desktops.</span></p>
+<p><span> Desktops:Correct. Hard drive failures are fairly uncommon occurrences for computers overall, but in desktops they have a lower occurrence rate than in desktops.)</span></p>
+<p><span></span></p>
+<p><span>Hint:Hard drive failures are fairly uncommon occurrences.</span></p>
+<p><span>Hard drive errors occur less often in desktops.</span></p>
+<p><span></span></p>
+<h5><span>did I get this- </span></h5>
+<p><span></span></p>
+<p><span>True or False: When a hard drive is powered on, if a mechanical failure is present, you may hear a clicking sound coming from the drive.</span></p>
+<p><span><span class="radioContainer clearfix"><input id="582445_i1_rad_0" name="582445_i1_group" type="radio" value="A"/><label for="582445_i1_rad_0">True</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582445_i1_rad_1" name="582445_i1_group" type="radio" value="B"/><label for="582445_i1_rad_1">False</label></span></span></p>
+<p><span></span></p>
+<p><span>(T:Correct. During a mechanical failure, you may hear a clicking sound coming from the disk when it is powered on.</span></p>
+<p><span> F:Incorrect. During a mechanical failure, you may hear a clicking sound coming from the disk when it is powered on.)</span></p>
+<p><span></span></p>
+<h4 class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">PCH18-硬盤驅動器故障排除</span></h4>
+<pre><span>硬盤故障在整個計算機上很少發生，但在筆記本電腦中，其發生率要高於台式機。通常，當硬盤工作時筆記<br/>本電腦受到震動時，會發生這種情況。硬盤驅動器故障的另一個原因是硬盤驅動器過熱。與計算機中的其他<br/>設備一樣，硬盤驅動器也需要充分冷卻以確保正常運行。如果硬盤驅動器過熱，則需要檢查筆記本電腦是否<br/>受到足夠的冷卻。您可以通過確保進氣口和風扇正常工作並且沒有灰塵的方式來執行此操作。<br/><br/></span>機械故障和缺陷是筆記本電腦和筆記本電腦中硬盤驅動器故障的另一個可能原因。硬盤中的壞扇區，電機無<br/><span lang="zh-TW">法旋轉，電源問題以及許多其他問題都可能導致硬盤驅動器故障。舊的硬盤可能會造成問題，或者如果您對<br/>硬盤進行了過多的格式化，則可能會導致機械故障。通常，您會聽到機械故障的聲音-磁盤可能會發出喀嗒<br/>聲，或者您會在通電後聽到磁槃無法“旋轉”的聲音。<br/><br/><span>硬盤驅動器的其他問題還包括由於病毒感染或攻擊，異常的系統關閉，意外取消正在運行的程序，頻繁的電<br/>源故障以及許多其他原因而導致數據損壞或無效。這些不僅僅是筆記本電腦的問題；筆記本電腦和台式機型<br/>號都可能出現這些問題。<br/><br/>要確定筆記本電腦硬盤驅動器是否發生故障，您必須遵循邏輯上的故障排除方法。首先，嘗試啟動計算機。<br/>如果看不到顯示屏，請收聽硬盤。打開機器電源時，您是否聽到過它“旋轉”的聲音？如果沒有，則很可能是<br/>筆記本電腦電源問題，而不是硬盤驅動器問題。檢查電池和交流適配器，以確保膝上型計算機已接通電源。<br/><br/></span></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">如果筆記本電腦顯示屏確實打開了，那麼您需要查看操作系統是否啟動。如果無法啟動，則可能是數據損壞<br/>問題或硬盤故障。首先，嘗試從交流適配器而不是電池引導筆記本電腦。那行嗎？如果是這樣，則可能是電<br/>池電量不足，無法正確旋轉硬盤驅動器。如果那不起作用，則接下來，檢查BIOS以查看硬盤驅動器是否被識<br/>別。如果在BIOS中無法識別驅動器，請檢查物理連接（電源和數據電纜，例如IDE / PATA和SATA）。如果<br/>在BIOS中識別到硬盤驅動器，但操作系統無法引導，則可能是驅動器上的數據已損壞；否則，可能是驅動器<br/>上的數據已損壞。因此，可能需要重新安裝操作系統，並且可能需要從備份中還原用戶數據。</span></pre>
+<pre><span lang="zh-TW"><span> </span></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">如果BIOS無法識別驅動器或無法加載操作系統，則可能是硬盤驅動器出現故障。聽硬盤驅動器；您聽到機械<br/>的喀噠聲嗎？如果這樣做，您的硬盤驅動器可能會發生故障，應盡快更換。如果您沒有聽到任何咔嗒聲，則<br/>可能是磁盤上的扇區損壞，請執行磁盤維護過程，例如“檢查磁盤”（CHKDSK）或“磁盤碎片整理”<br/>（DISK DEFRAG）。</span></pre>
+<pre><span lang="zh-TW"><span> </span></span></pre>
+<h5 class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">通過實踐學習-</span></h5>
+<pre><span lang="zh-TW"><span><br/>Tony剛在他的便攜式計算機中安裝了新的傳統硬盤驅動器。他啟動了機器，但是無法識別驅動器。哪個不是<br/>該錯誤的可能原因？<br/><span class="radioContainer clearfix"><input id="582785_i1_rad_0" name="582785_i1_group" type="radio" value="A"/>硬盤故障。<label class="incorrectPrimary" for="582785_i1_rad_0"><br/></label></span><span class="radioContainer clearfix"><input id="582785_i1_rad_1" name="582785_i1_group" type="radio" value="B"/>與主板的電纜連接不正確。<br/></span><span class="radioContainer clearfix"><input id="582785_i1_rad_2" name="582785_i1_group" type="radio" value="C"/>筆記本電腦電池電量不足。<label class="" for="582785_i1_rad_2"><br/></label></span><span class="radioContainer clearfix"><input id="582785_i1_rad_3" name="582785_i1_group" type="radio" value="D"/></span></span></span><span lang="zh-TW">屏幕顯示昏暗。</span></pre>
+<pre><span lang="zh-TW"><span><span class="radioContainer clearfix"></span><br/>(1:</span></span><span lang="zh-TW">不正確。如果硬盤驅動器出現故障，則操作系統將無法識別該硬盤驅動器。<br/></span><span lang="zh-TW"><span> 2:</span></span><span lang="zh-TW">不正確。如果驅動器未正確連接至主板，則可能無法正確啟動，這將導致操作系統無法識別驅動器。<br/></span><span lang="zh-TW"><span> 3:</span></span><span lang="zh-TW">不正確。如果筆記本電腦的電池電量不足，則可能無法提供足夠的電量來正常旋轉硬盤驅動器。<br/></span><span lang="zh-TW"><span> 4:</span></span><span lang="zh-TW">正確。屏幕變暗並不是操作系統無法識別硬盤驅動器的原因。</span><span lang="zh-TW"><span>)<br/></span><br/></span></pre>
+<p><span>提示:</span><span lang="zh-TW">如果驅動器發生故障，操作系統將無法識別它。</span></p>
+<p><span>如果筆記本電腦的電池電量不足，則可能無法提供足夠的電量來正常旋轉硬盤驅動器。</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">屏幕變暗並不是操作系統無法識別硬盤驅動器的原因。</span></pre>
+<p><span></span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">硬盤驅動器錯誤在計算機中相對少見，但在以下情況下更經常發生</span><span> </span><span class="i1 incorrectPrimary"> <span class="component"><select class="highlight" id="i1">
+<option id="i1_EMPTY_CHOICE" value="">--</option>
+<option id="i1_opt_0" value="A">Laptops</option>
+<option id="i1_opt_1" value="B">Desktops</option>
+<option id="i1_opt_2" value="C">Workstations</option>
+
+
+
+
+
+
+</select></span><a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH18/x-oli-workbook_page/javascript();" rel="556612" title="Click for hint"></a></span><span><span> 比在</span><span> <br/></span></span><span class="i2 correctPrimary"> <span class="component"><select class="" id="i2">
+<option id="i2_EMPTY_CHOICE" value="">--</option>
+<option id="i2_opt_0" value="A">Laptops</option>
+<option id="i2_opt_1" value="B">Desktops</option>
+
+
+
+
+
+
+</select>。</span></span></pre>
+<p><span></span></p>
+<p>(Laptops:<span lang="zh-TW">正確。硬盤故障在整個計算機上很少發生，但在筆記本電腦中，其發生率要高於台式機。</span></p>
+<p> Desktops:<span lang="zh-TW">不正確。硬盤故障在整個計算機上很少發生，但在筆記本電腦中，其發生率要高於台式機。</span></p>
+<p><span></span> Workstations:<span lang="zh-TW">不正確。硬盤故障在整個計算機上很少發生，但在筆記本電腦中，其發生率要高於台式機。</span><span>)</span></p>
+<p><span></span></p>
+<p><span>(Laptops:</span><span lang="zh-TW">不正確。硬盤故障在整個計算機上很少發生，但是在台式機中，發生率比台式機低。</span></p>
+<p><span> Desktops:正確。硬盤故障在整個計算機上很少發生，但是在台式機中，發生率比台式機低。</span>)</p>
+<p><span></span></p>
+<p><span>提示:硬盤驅動器故障很少見。</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">硬盤錯誤在台式機中很少發生。</span></pre>
+<p><span></span></p>
+<h5><span>我得到這個了嗎？-</span></h5>
+<p><span></span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">是非題：硬盤驅動器上電後，如果出現機械故障，您可能會聽到驅動器發出喀嗒聲。</span></pre>
+<p><span><span class="radioContainer clearfix"><input id="582445_i1_rad_0" name="582445_i1_group" type="radio" value="A"/><label for="582445_i1_rad_0">正確</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582445_i1_rad_1" name="582445_i1_group" type="radio" value="B"/>錯誤</span></span></p>
+<p><span></span></p>
+<p><span>(正確:</span><span lang="zh-TW">正確。機械故障期間，打開電源後，您可能會聽到磁盤發出喀嗒聲。</span></p>
+<p><span> 錯誤:</span><span lang="zh-TW">不正確。機械故障期間，打開電源後，您可能會聽到磁盤發出喀嗒聲。</span>)</p>
+<p><span></span></p>
+<br />Memory- << <a href='Memory-.html'>Previous</a> <a href='PCH19-Notebook Power and Physical Security.html'>Next</a> >> PCH19-Notebook Power and Physical Security</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

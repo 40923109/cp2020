@@ -1,0 +1,343 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923109 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923109 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='Develop.html'>Develop</a></li></ul><li><a href='PC Hardware (Open + Free) P.121~P.132.html'>PC Hardware (Open + Free) P.121~P.132</a><li class='has-children'><a href='Unit  5- Notebooks and Laptops.html'>Unit  5- Notebooks and Laptops</a><ul class='dropdown'><li class='has-children'><a href='PCH17-Notebook Features and Components.html'>PCH17-Notebook Features and Components</a><ul class='dropdown'><li><a href='Overview--1.html'>Overview--1</a><li><a href='Laptops and Notebooks-.html'>Laptops and Notebooks-</a></li></ul><li class='has-children'><a href='PCH17-Installing and Configuring Laptop Hardware.html'>PCH17-Installing and Configuring Laptop Hardware</a><ul class='dropdown'><li><a href='Expansion-.html'>Expansion-</a></li></ul><li class='has-children'><a href='PCH17-Notebook Features.html'>PCH17-Notebook Features</a><ul class='dropdown'><li><a href='Laptop Displays-.html'>Laptop Displays-</a><li><a href='Device Replacement-.html'>Device Replacement-</a></li></ul><li class='has-children'><a href='PCH18-Laptop and Notebook Component Replacement.html'>PCH18-Laptop and Notebook Component Replacement</a><ul class='dropdown'><li><a href='Overview--2.html'>Overview--2</a><li><a href='Notebook Hard Drives-.html'>Notebook Hard Drives-</a><li><a href='Memory-.html'>Memory-</a></li></ul><li><a href='PCH18-Troubleshooting Hard Drives.html'>PCH18-Troubleshooting Hard Drives</a><li><a href='PCH19-Notebook Power and Physical Security.html'>PCH19-Notebook Power and Physical Security</a><li class='has-children'><a href='PCH19-Overview.html'>PCH19-Overview</a><ul class='dropdown'><li><a href='Battery Types-.html'>Battery Types-</a></li></ul><li><a href='PCH19-AC Power.html'>PCH19-AC Power</a><li><a href='PCH19-Proper Disposal Procedures.html'>PCH19-Proper Disposal Procedures</a><li><a href='PCH19-Security.html'>PCH19-Security</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">Notebook Hard Drives- << <a href='Notebook Hard Drives-.html'>Previous</a> <a href='PCH18-Troubleshooting Hard Drives.html'>Next</a> >> PCH18-Troubleshooting Hard Drives<br /><h1>Memory-</h1>
+<p></p>
+<p><span>Laptops use memory modules similar to their larger desktop counterparts. In desktops, DDR, DDR2, and DDR3 RAM modules are used to upgrade our systems, based upon the memory slots provided by the motherboard, and the speed and size accepted by the motherboard. Laptops, similarly, require the proper size and speed modules for their motherboards. Therefore, it is important to check the manufacturer’s manual for a laptop. Laptop memory also comes in DDR, DDR2, and DDR3 varieties, but laptops use the SODIMM (small outline dual in-line memory module) form factor. These are much smaller, more compact versions of the standard DDR, DDR2, and DDR3 modules, but they operate at the same speed and capacity as the larger versions.</span></p>
+<p><span></span></p>
+<p><span><img alt="" height="296" src="./../images/image3 (1).png" width="446"/></span></p>
+<p><span>SODIMM in a laptop. Photo used under CC-BY-NC license from </span><a href="https://flic.kr/p/4e1Uq5" id="_i_5" lang="" target="_blank">Ben Williams</a><span>.</span></p>
+<p><span></span></p>
+<p id="N106F8" lang="">Replacing and upgrading memory is a fairly simply process, similar to replacing memory in a desktop machine. First, remove the power by shutting down the laptop, removing the power cord, and (if possible) removing the battery from the laptop. Next, replace the existing memory module, or add a second one, if applicable. Some laptops, like the one shown above, have a small plastic door covering the memory slots for easy access. Others may require full disassembly to access the memory slots. In a desktop computer, the modules are inserted at a straight-up-and-down vertical angle (90 degrees), but with laptops, the modules are inserted at a 45-degree angle first. Then the modules are pushed down into place once they are fully inserted into the memory slot. This is required due to the space limitations in the laptop.</p>
+<p id="N106FB" lang="">Some laptops have a single memory slot, while others have two slots. Some laptops may have their memory soldered onto the motherboard, making upgrading or removing the memory impossible. Always check your laptop’s manual for details on how many modules your laptop will accept (if any), how many gigabytes they can be, and the speed of the modules. For example, in the bottom image below, we see a 2 GB DDR2 memory module that operates at 6400 MBps, or 800 MHz.</p>
+<p lang=""></p>
+<p lang=""><img alt="" height="230" src="./../images/image4 (1).png" width="438"/></p>
+<div class="imagewrap">
+<p id="N10704" lang="">2 GB DDR2 memory module. Photo used under CC-BY-SA license from<span> </span><a href="https://flic.kr/p/7N7iXh" id="_i_7" lang="" target="_blank">Cheon Fong Liew</a>.</p>
+</div>
+<div actguid="d87f2ffa0a0001dc615ffff1dfc1034e" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2ffa0a0001dc615ffff1dfc1034e&amp;userGUID=6a7a33cd0a0001dc5dcbd60b62bf8744&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch18_lbd01">
+<div class="activityhead"></div>
+<h5 class="activityhead">learn by doing-</h5>
+</div>
+</div>
+<p></p>
+<p><span>What type of laptop memory is commonly installed in newer-model laptops?</span></p>
+<p><span class="radioContainer clearfix"><input id="582568_i1_rad_0" name="582568_i1_group" type="radio" value="A"/><label for="582568_i1_rad_0">SODIMM</label></span></p>
+<p><span class="radioContainer clearfix"><input id="582568_i1_rad_1" name="582568_i1_group" type="radio" value="B"/><label for="582568_i1_rad_1">DIMM</label></span></p>
+<p><span class="radioContainer clearfix"><input id="582568_i1_rad_2" name="582568_i1_group" type="radio" value="C"/><label for="582568_i1_rad_2">SDRAM</label></span></p>
+<p><span class="radioContainer clearfix"><input id="582568_i1_rad_3" name="582568_i1_group" type="radio" value="D"/><label for="582568_i1_rad_3">SIM</label></span></p>
+<p></p>
+<p>(1:<span>Correct. Laptop memory uses the SODIMM (small outline dual in-line memory module) form factor. These are much smaller, more compact versions of the standard DDR, DDR2, and DDR3 modules, but operate at the same speed and capacity as the larger versions.</span></p>
+<p> 2:<span>Incorrect. Laptop memory uses the SODIMM (small outline dual in-line memory module) form factor. These are much smaller, more compact versions of the standard DDR, DDR2, and DDR3 modules, but operate at the same speed and capacity as the larger versions.</span></p>
+<p> 3:<span>Incorrect. Laptop memory uses the SODIMM (small outline dual in-line memory module) form factor. These are much smaller, more compact versions of the standard DDR, DDR2, and DDR3 modules, but operate at the same speed and capacity as the larger versions.</span></p>
+<p> 4:<span>Incorrect. Laptop memory uses the SODIMM (small outline dual in-line memory module) form factor. These are much smaller, more compact versions of the standard DDR, DDR2, and DDR3 modules, but operate at the same speed and capacity as the larger versions.</span>)</p>
+<p><span></span></p>
+<p><span>Hint:Laptops use much smaller, more compact versions of the standard DDR, DDR2, and DDR3 modules used in desktops.</span></p>
+<p><span>These modules operate at the same speed and capacity as the larger versions.</span></p>
+<p><span>Laptop memory uses the SODIMM (small outline dual in-line memory module) form factor.</span></p>
+<p><span></span></p>
+<p><span>A typical laptop hard drive is what size?</span></p>
+<p><span><span class="radioContainer clearfix"><input id="582569_i1_rad_0" name="582569_i1_group" type="radio" value="A"/><label for="582569_i1_rad_0">2.5 inches</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582569_i1_rad_1" name="582569_i1_group" type="radio" value="B"/><label for="582569_i1_rad_1">2.8 inches</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582569_i1_rad_2" name="582569_i1_group" type="radio" value="C"/><label for="582569_i1_rad_2">3.5 inches</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582569_i1_rad_3" name="582569_i1_group" type="radio" value="D"/><label for="582569_i1_rad_3">3.8 inches</label></span></span></p>
+<p><span></span></p>
+<p><span>(1:Correct. A traditional desktop computer uses a 3.5-inch hard disk drive, but laptops typically use a 2.5-inch hard drive.</span></p>
+<p><span> 2:Incorrect. A traditional desktop computer uses a 3.5-inch hard disk drive, but laptops typically use a 2.5-inch hard drive.</span></p>
+<p><span> 3:Incorrect. A traditional desktop computer uses a 3.5-inch hard disk drive, but laptops typically use a 2.5-inch hard drive.</span></p>
+<p><span> 4:Incorrect. A traditional desktop computer uses a 3.5-inch hard disk drive, but laptops typically use a 2.5-inch hard drive.)</span></p>
+<p><span></span></p>
+<p><span>Hint:A traditional desktop computer uses a 3.5-inch hard disk drive.</span></p>
+<p><span>Laptops typically use a 2.5-inch hard drive.</span></p>
+<p><span></span></p>
+<p><span>Katherine is going to replace the hard drive in her laptop. Which of the following steps is not necessary for Katherine to complete?</span></p>
+<p><span><span class="radioContainer clearfix"><input id="582570_i1_rad_0" name="582570_i1_group" type="radio" value="A"/><label for="582570_i1_rad_0">Disconnect AC power from the laptop.</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582570_i1_rad_1" name="582570_i1_group" type="radio" value="B"/><label for="582570_i1_rad_1">Remove the heat sink.</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582570_i1_rad_2" name="582570_i1_group" type="radio" value="C"/><label for="582570_i1_rad_2">Remove the battery.</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582570_i1_rad_3" name="582570_i1_group" type="radio" value="D"/><label for="582570_i1_rad_3">Remove the casing and/or access panel covering the hard drive.</label></span></span></p>
+<p><span></span></p>
+<p><span>(1:Incorrect. This is a required step in laptop hard drive replacement.</span></p>
+<p><span> 2:Correct. The heat sink removes heat from the CPU, not the hard drive. Removal of the heat sink is not required.</span></p>
+<p><span> 3:Incorrect. This is a required step in laptop hard drive replacement.</span></p>
+<p><span> 4:Incorrect. This is a required step in laptop hard drive replacement.)</span></p>
+<p><span></span></p>
+<p><span>Hint:Disconnecting power is a required step.</span></p>
+<p><span>Removing the battery is a required step.</span></p>
+<p><span>The heat sink removes heat from the CPU, not the hard drive. Removal of the heat sink is not required.</span></p>
+<p><span></span></p>
+<h5><span>did I get this-</span></h5>
+<p><span></span></p>
+<p><span>Carey needs to add more RAM to her laptop and has asked you for help. What do you tell her?</span></p>
+<p><span><span class="radioContainer clearfix"><input id="582305_i1_rad_0" name="582305_i1_group" type="radio" value="A"/><label class="" for="582305_i1_rad_0">It is not possible as RAM is installed as a flash chip at the factory. However, she can create a larger page file on the hard drive to help with resource consumption.</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582305_i1_rad_1" name="582305_i1_group" type="radio" value="B"/><label class="" for="582305_i1_rad_1">It can be done. She needs SODIMM RAM based on the manufacturer specifications, and the memory bays can be accessed underneath the laptop.</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582305_i1_rad_2" name="582305_i1_group" type="radio" value="C"/><label class="" for="582305_i1_rad_2">It is possible. She needs DDR3 RAM, and the memory bays are located on the side of the laptop, with each module sliding in horizontally.</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582305_i1_rad_3" name="582305_i1_group" type="radio" value="D"/><label class="" for="582305_i1_rad_3">It can be done. However, the laptop must be sent to the manufacturer to complete the procedure.</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582305_i1_rad_4" name="582305_i1_group" type="radio" value="E"/><label class="incorrectPrimary" for="582305_i1_rad_4">It is not possible as RAM is embedded on the CPU.</label></span></span></p>
+<p><span></span></p>
+<p><span>(1:Incorrect. RAM can be added to a laptop.</span></p>
+<p><span> 2:Correct. RAM can be replaced/upgraded. SODIMM RAM is required.</span></p>
+<p><span> 3:Incorrect. Memory bays are not located on the side of the laptop.</span></p>
+<p><span> 4:Incorrect. RAM replacement can be done locally. The unit does not need to be returned to the manufacturer for this upgrade.</span></p>
+<p><span> 5:Incorrect. RAM can be added/replaced/upgraded in a laptop.)</span></p>
+<p><span></span></p>
+<p><span>Xavier wants to purchase a new laptop, and travels quite a bit for business. He is looking for a unit that is thin and light, with excellent performance. A <span class="i1"> <span class="component"><select id="i1">
+<option id="i1_EMPTY_CHOICE" value="">--</option>
+<option id="i1_opt_0" value="A">solid state</option>
+<option id="i1_opt_1" value="B">spinning</option>
+</select></span></span><span><span> </span>hard drive is ideal for Xavier.</span></span></p>
+<p><span></span></p>
+<p><span>(solid state:Correct. SSDs are highly resistant to shock and movement, and have low latency and high access speeds. The performance of SSDs is far superior to traditional spinning hard disk drives.</span></p>
+<p><span> spinning:Incorrect. SSDs are highly resistant to shock and movement, and have low latency and high access speeds. The performance of SSDs is far superior to traditional spinning hard disk drives.)</span></p>
+<p><span></span></p>
+<h4><span></span><span lang="zh-TW"><span>記憶-</span><br/><br/></span></h4>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">筆記本電腦使用的內存模塊與大型台式機相似。在台式機中，DDR，DDR2和DDR3 RAM模塊用於根據主板提供<br/>的內存插槽以及主板可接受的速度和大小來升級我們的系統。類似地，筆記本電腦需要適合其主板的尺寸和<br/>速度模塊。因此，請務必查看筆記本電腦的製造商手冊。筆記本電腦內存還提供DDR，DDR2和DDR3多種類型<br/>，但筆記本電腦使用SODIMM（小尺寸雙列直插式內存模塊）尺寸。這些是標準DDR，DDR2和DDR3模塊的更小<br/>，更緊湊的版本，但它們的運行速度和容量與較大版本相同。<br/><br/><img alt="" height="296" src="./../images/image3 (1).png" width="446"/><br/></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">筆記本電腦中的SODIMM。本圖片由Ben Williams根據CC-BY-NC許可使用。<br/><br/></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">更換和升級內存是一個相當簡單的過程，類似於在台式機中更換內存。首先，請關閉筆記本電腦，拔下電源<br/>線，並（如果可能）從筆記本電腦中取出電池，以斷開電源。接下來，更換現有的內存模塊，或添加第二個<br/>內存模塊（如果適用）。某些筆記本電腦，如上圖所示，有一個小的塑料門蓋住內存插槽，以便於使用。其<br/>他可能需要完全拆卸才能訪問內存插槽。在台式計算機中，模塊以垂直向上和向下的垂直角度（90度）插入<br/>，但在筆記本電腦中，模塊首先以45度角插入。將模塊完全插入內存插槽後，將其向下推入到位。由於筆記<br/>本電腦的空間限制，這是必需的。</span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span>一些筆記本電腦只有一個內存插槽，而其他筆記本電腦有兩個插槽。有些筆記本電腦的內存可能焊接在主板<br/>上，因此無法升級或刪除內存。請始終查看筆記本電腦的手冊，以獲取有關筆記本電腦可以容納多少個模塊<br/>（如果有），可以容納多少GB以及模塊速度的詳細信息。例如，在下面的底部圖像中，我們看到一個<br/>2 GB DDR2內存模塊，其工作頻率為6400 MBps或800 MHz。</span></span><span></span></pre>
+<h4 class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></h4>
+<p><span><img alt="" height="230" src="./../images/image4 (1).png" width="438"/></span></p>
+<p><span>2 GB DDR2內存模塊。天鳳六照根據CC-BY-SA許可使用的照片。</span></p>
+<p><span></span></p>
+<h5><span>通過實踐學習-</span></h5>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">新型筆記本電腦通常安裝哪種類型的筆記本電腦內存？</span></pre>
+<p><span><span class="radioContainer clearfix"><input id="582568_i1_rad_0" name="582568_i1_group" type="radio" value="A"/><label class="" for="582568_i1_rad_0">SODIMM</label></span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582568_i1_rad_1" name="582568_i1_group" type="radio" value="B"/>內存條</span></span></p>
+<p><span><span class="radioContainer clearfix"><input id="582568_i1_rad_2" name="582568_i1_group" type="radio" value="C"/></span></span><span lang="zh-TW">內存</span></p>
+<p><span><span class="radioContainer clearfix"><input id="582568_i1_rad_3" name="582568_i1_group" type="radio" value="D"/>SIM卡</span></span></p>
+<p><span></span></p>
+<p><span>(1:</span><span lang="zh-TW">正確。筆記本電腦內存使用SODIMM（小尺寸雙列直插式內存模塊）尺寸。這些是標準DDR，DDR2和DDR3模塊的更小，更緊湊的版本，但其運行速度和容量與較大版本相同。</span></p>
+<p><span> 2:不正確。筆記本電腦內存使用SODIMM（小尺寸雙列直插式內存模塊）尺寸。這些是標準DDR，DDR2和DDR3模塊的更小，更緊湊的版本，但其運行速度和容量與較大版本相同。</span></p>
+<p><span> 3:不正確。筆記本電腦內存使用SODIMM（小尺寸雙列直插式內存模塊）尺寸。這些是標準DDR，DDR2和DDR3模塊的更小，更緊湊的版本，但其運行速度和容量與較大版本相同。</span></p>
+<p><span> 4:不正確。筆記本電腦內存使用SODIMM（小尺寸雙列直插式內存模塊）尺寸。這些是標準DDR，DDR2和DDR3模塊的更小，更緊湊的版本，但其運行速度和容量與較大版本相同。)</span></p>
+<p><span></span></p>
+<p>提示:<span lang="zh-TW">筆記本電腦使用更小，更緊湊的台式機標準DDR，DDR2和DDR3模塊版本。</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">這些模塊以與較大版本相同的速度和容量運行。</span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">筆記本電腦內存使用SODIMM（小尺寸雙列直插式內存模塊）尺寸。</span></pre>
+<p><span></span></p>
+<p><span></span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">典型的筆記本電腦硬盤大小是多少？<br/></span><span class="radioContainer clearfix"><input id="582569_i1_rad_0" name="582569_i1_group" type="radio" value="A"/><label class="" for="582569_i1_rad_0">2.5<span>英寸</span><br/></label></span><span class="radioContainer clearfix"><input id="582569_i1_rad_1" name="582569_i1_group" type="radio" value="B"/><label class="" for="582569_i1_rad_1">2.8<span>英寸</span><br/></label></span><span class="radioContainer clearfix"><input id="582569_i1_rad_2" name="582569_i1_group" type="radio" value="C"/><label class="" for="582569_i1_rad_2">3.5<span>英寸</span><br/></label></span><span class="radioContainer clearfix"><input id="582569_i1_rad_3" name="582569_i1_group" type="radio" value="D"/><label class="incorrectPrimary" for="582569_i1_rad_3">3.8<span>英寸</span></label></span></pre>
+<p><span></span></p>
+<p><span>(1:</span><span lang="zh-TW">正確。傳統台式計算機使用3.5英寸硬盤驅動器，但筆記本電腦通常使用2.5英寸硬盤驅動器。</span></p>
+<p><span> 2:不正確。傳統台式計算機使用3.5英寸硬盤驅動器，但筆記本電腦通常使用2.5英寸硬盤驅動器。</span></p>
+<p><span> 3:不正確。傳統台式計算機使用3.5英寸硬盤驅動器，但筆記本電腦通常使用2.5英寸硬盤驅動器。</span></p>
+<p><span> 4:不正確。傳統台式計算機使用3.5英寸硬盤驅動器，但筆記本電腦通常使用2.5英寸硬盤驅動器。)</span></p>
+<p><span></span></p>
+<p><span>提示:</span><span lang="zh-TW">傳統台式計算機使用3.5英寸硬盤驅動器。</span></p>
+<p><span>筆記本電腦通常使用2.5英寸硬盤。</span></p>
+<p><span></span></p>
+<p><span>凱瑟琳將更換她筆記本電腦中的硬盤。凱瑟琳不需要執行以下哪個步驟？</span></p>
+<p><span><span class="radioContainer clearfix"><input id="582570_i1_rad_0" name="582570_i1_group" type="radio" value="A"/></span></span><span lang="zh-TW">從筆記本電腦上連接交流電源。</span></p>
+<p><span><span class="radioContainer clearfix"><input id="582570_i1_rad_1" name="582570_i1_group" type="radio" value="B"/>卸下散熱器。</span></span></p>
+<p><span><input id="582570_i1_rad_2" name="582570_i1_group" type="radio" value="C"/>取出電池。</span></p>
+<p><input id="582570_i1_rad_3" name="582570_i1_group" type="radio" value="D"/><span lang="zh-TW">卸下覆蓋硬盤驅動器的外殼和/或檢修面板。</span></p>
+<p><span></span></p>
+<p><span>(1:不正確。這是筆記本電腦硬盤驅動器更換中的必需步驟。</span></p>
+<p><span> 2:正確。散熱器從CPU而非硬盤驅動器中散熱。不需要拆卸散熱器。</span></p>
+<p><span> 3:不正確。這是筆記本電腦硬盤驅動器更換中的必需步驟。</span></p>
+<p><span> 4:不正確。這是筆記本電腦硬盤驅動器更換中的必需步驟。)</span></p>
+<p><span></span></p>
+<p><span>提示:</span><span lang="zh-TW">斷開電源是必需的步驟。</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">卸下電池是必需的步驟。</span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">散熱器從CPU而非硬盤驅動器中散熱。不需要拆卸散熱器。</span></pre>
+<p><span lang="zh-TW"></span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">Carey需要為她的筆記本電腦添加更多RAM，並已要求您提供幫助。你告訴她什麼?<br/><span class="radioContainer clearfix"><input id="582305_i1_rad_0" name="582305_i1_group" type="radio" value="A"/><span>由於在工廠將RAM作為閃存芯片安裝，因此這是不可能的。然而， 她可以在硬盤驅動器上創建更大的頁<br/>面文件，以幫助節省資源。</span><label class="" for="582305_i1_rad_0"><br/></label></span><span class="radioContainer clearfix"><input id="582305_i1_rad_1" name="582305_i1_group" type="radio" value="B"/></span></span><span lang="zh-TW">可以辦到。她需要基於製造商規格的SODIMM RAM，並且可以在筆記本電腦下面訪問內存託架。<br/></span><span lang="zh-TW"><span class="radioContainer clearfix"><input id="582305_i1_rad_2" name="582305_i1_group" type="radio" value="C"/><span>有可能的。她需要DDR3 RAM，並且內存託架位於筆記本電腦的側面，每個模塊都可以水平滑動。<br/></span></span><span class="radioContainer clearfix"><input id="582305_i1_rad_3" name="582305_i1_group" type="radio" value="D"/></span></span><span lang="zh-TW">可以辦到。但是，必須將筆記本電腦發送給製造商才能完成該過程。<br/></span><span lang="zh-TW"><span class="radioContainer clearfix"><input id="582305_i1_rad_4" name="582305_i1_group" type="radio" value="E"/></span></span><span lang="zh-TW">由於RAM嵌入在CPU中，因此這是不可能的。</span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span class="radioContainer clearfix"></span><br/></span></pre>
+<p><span>(1:</span><span lang="zh-TW">不正確。可以將RAM添加到筆記本電腦。</span></p>
+<p><span> 2:正確。可以更換/升級RAM。需要SODIMM RAM。</span></p>
+<p><span> 3:</span><span lang="zh-TW">不正確。內存託架不在筆記本電腦的側面。</span></p>
+<p><span> 4:</span><span lang="zh-TW">不正確。RAM更換可以在本地完成。此升級不需要將設備退還給製造商。</span></p>
+<p><span> 5:不正確。可以在筆記本電腦中添加/替換/升級RAM。)</span></p>
+<p><span></span></p>
+<p><span>Xavier想要購買一台新的筆記本電腦，並且需要經常出差。他正在尋找一種輕薄，性能卓越的設備。一種<select id="i1">
+<option id="i1_EMPTY_CHOICE" value="">--</option>
+<option id="i1_opt_0" value="A">solid state</option>
+<option id="i1_opt_1" value="B">spinning</option>
+</select>硬盤是Xavier的理想選擇。</span></p>
+<p><span></span></p>
+<p><span>(solid state:正確。 SSD具有很高的抗衝擊和移動性，並具有低延遲和高訪問速度。 SSD的性能遠遠優於傳統的旋轉硬盤驅動器。</span></p>
+<p> spinning:<span>不正確。SSD具有很高的抗衝擊和移動性，並具有低延遲和高訪問速度。 SSD的性能遠遠優於傳統的旋轉硬盤驅動器。</span>)</p>
+<p></p>
+<br />Notebook Hard Drives- << <a href='Notebook Hard Drives-.html'>Previous</a> <a href='PCH18-Troubleshooting Hard Drives.html'>Next</a> >> PCH18-Troubleshooting Hard Drives</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
