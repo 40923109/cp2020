@@ -133,20 +133,79 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Battery Types- << <a href='Battery Types-.html'>Previous</a> <a href='PCH19-Proper Disposal Procedures.html'>Next</a> >> PCH19-Proper Disposal Procedures<br /><h1>PCH19-AC Power</h1>
-<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span></span><br/><span>As previously stated, the battery is used to provide direct current to your notebook and the battery is then recharged by the AC adapter that connects your laptop to the wall outlet. While the battery directly powers the notebook’s components, much like a power supply in a desktop, the battery doesn’t perform any transformation of the power it receives or sends out. These functions are handled by the AC adapter. Many docking stations provide the ability to either use the regular AC adapter as their power source, or use a built-in AC adapter to perform the transformation of the power from AC to DC. If the laptop is using a docking station, it still uses the battery to provide power to the laptop, and the docking station to charge the laptop’s battery. A </span><a aria-describedby="N1067F" class="extra" id=""></a>port replicator<span><span> </span>, on the other hand, requires the AC adapter to perform the transformation for it.</span><br/><br/><img alt="" height="232" src="./../images/image3 (2).png" width="552"/><br/><span>Docking station rear view. Photo used under CC-BY license from </span><a href="https://flic.kr/p/e6ZRAD" id="_i_1" lang="" target="_blank">Tolbxela</a><span>.</span><br/></span></p>
+    <div id="tipue_search_content">P20(PRACTICE) << <a href='P20(PRACTICE).html'>Previous</a> <br /><h1>P21(PRACTICE)</h1>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
-<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span>Docking stations are used to add capabilities to a laptop and create a "desktop" experience. For example, in the image above, you can see that the docking station has numerous USB ports, a PS/2 port for keyboard/mouse, a modem port, Ethernet port, VGA and DVI display outputs, audio input and output ports, as well as serial and parallel connections. Some docking stations even have built-in hard drives and optical drives for additional storage. A port replicator, on the other hand, only provides the same ports that already exist on the laptop. This is used for quick connection and disconnection to the various external devices when the laptop is returned to the office environment.</span></span></p>
+<h4><span></span>Write To A File Solutions</h4>
+<h4><span></span>Exercise 21</h4>
 <p><span></span></p>
-<h4><span>PCH19-交流電源</span></h4>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><br/>如前所述，電池用於為筆記本計算機提供直流電，然後通過將筆記本計算機連接至牆上插座的交流適配器為<br/>電池充電。儘管電池可以直接為筆記本計算機的組件供電，就像台式機中的電源一樣，但是電池不會對其接<br/>收或發出的電能進行任何轉換。這些功能由交流適配器處理。許多擴展塢都提供了使用常規AC適配器作為電<br/>源或使用內置AC適配器執行從AC到DC的電源轉換的功能。如果筆記本電腦使用的是擴展塢，它仍會使用電池<br/>為筆記本電腦供電，而擴展塢則使用筆記本電腦的電池充電。另一方面，端口復制器需要AC適配器為其執行<br/>轉換。</span></pre>
+<p>Take the code from the<span> </span><a href="https://www.practicepython.org/exercise/2014/06/06/17-decode-a-web-page.html">How To Decode A Website</a><span> </span>exercise (if you didn’t do it or just want to play with some different code, use the code from the<span> </span><a href="https://www.practicepython.org/solution/2014/07/10/17-decode-a-web-page-solutions.html">solution</a>), and instead of printing the results to a screen, write the results to a txt file. In your code, just make up a name for the file you are saving to.</p>
+<p>Extras:</p>
+<ul>
+<li>Ask the user to specify the name of the output file that will be saved.</li>
+</ul>
 <p><span></span></p>
-<p><span><img alt="" height="232" src="./../images/image3 (2).png" width="552"/></span></p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">擴展塢後視圖。照片由Tolbxela根據CC-BY許可使用。</span></pre>
+<h4><span></span>Sample solution</h4>
 <p><span></span></p>
-<pre><span>擴展塢用於向筆記本電腦添加功能並創建“桌面”體驗。例如，在上圖中，您可以看到擴展塢具有多個USB端口<br/>，一個用於鍵盤/鼠標的PS / 2端口，一個調製解調器端口，以太網端口，VGA和DVI顯示輸出，音頻輸入和<br/>輸出端口，如以及串行和並行連接。某些擴展塢甚至具有內置硬盤驅動器和光盤驅動器，用於額外存儲。另<br/>一方面，端口復制器僅提供筆記本電腦上已經存在的相同端口。當筆記本電腦返回辦公環境時，可用於快速<br/>連接和斷開與各種外部設備的連接。</span></pre>
+<p>The sample solution takes the out-of-the-box solution for<span> </span><a href="https://gist.github.com/mprat/b042a834835cfb4bbe6c">Exercise 17</a><span> </span>and adds two components:</p>
+<p>1.Asking the user for the name of a file</p>
+<p>2.Substitutes every<span> </span><code class="highlighter-rouge">print</code><span> </span>statement with a statement writing to a file</p>
+<p>Here is the full solution:</p>
 <p><span></span></p>
-<br />Battery Types- << <a href='Battery Types-.html'>Previous</a> <a href='PCH19-Proper Disposal Procedures.html'>Next</a> >> PCH19-Proper Disposal Procedures</div>
+<pre>import requests
+from bs4 import BeautifulSoup
+ 
+base_url = 'http://www.nytimes.com'
+r = requests.get(base_url)
+soup = BeautifulSoup(r.text)
+
+filename = input("File to save to: ")
+
+with open(filename, 'w') as f:
+  for story_heading in soup.find_all(class_="story-heading"): 
+      if story_heading.a: 
+          f.write(story_heading.a.text.replace("\n", " ").strip())
+      else: 
+          f.write(story_heading.contents[0].strip())</pre>
+<p><span></span></p>
+<h4 class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">寫入文件解決方案</span></h4>
+<h4><span>練習21</span></h4>
+<p><span></span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">從“如何解碼網站”練習中獲取代碼（如果您沒有這樣做，或者只是想使用一些不同的代碼，請使用解決方案<br/>中的代碼），而不是將結果打印到屏幕上，而是將結果寫在屏幕上到txt文件。在您的代碼中，只需為要保<br/>存到的文件命名。
+
+附加功能：</span></pre>
+<ul>
+<li>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">要求用戶指定將要保存的輸出文件的名稱。</span></pre>
+</li>
+</ul>
+<p><span lang="zh-TW"></span></p>
+<h4 class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">樣品溶液</span></h4>
+<p><span></span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">該示例解決方案採用了練習17的即用型解決方案，並添加了兩個組件：<br/></span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr">1.<span lang="zh-TW">向用戶詢問文件名</span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr">2.<span lang="zh-TW">用寫入文件的語句替換每個打印語句 </span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">這是完整的解決方案：</span></p>
+<pre>import requests
+from bs4 import BeautifulSoup
+ 
+base_url = 'http://www.nytimes.com'
+r = requests.get(base_url)
+soup = BeautifulSoup(r.text)
+
+filename = input("File to save to: ")
+
+with open(filename, 'w') as f:
+  for story_heading in soup.find_all(class_="story-heading"): 
+      if story_heading.a: 
+          f.write(story_heading.a.text.replace("\n", " ").strip())
+      else: 
+          f.write(story_heading.contents[0].strip())</pre>
+<p><span></span></p>
+<p><span></span></p>
+<p><span></span></p>
+<p><span></span></p>
+<p><span></span></p>
+<p><span></span></p><br />P20(PRACTICE) << <a href='P20(PRACTICE).html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">

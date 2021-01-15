@@ -133,20 +133,140 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Battery Types- << <a href='Battery Types-.html'>Previous</a> <a href='PCH19-Proper Disposal Procedures.html'>Next</a> >> PCH19-Proper Disposal Procedures<br /><h1>PCH19-AC Power</h1>
-<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span></span><br/><span>As previously stated, the battery is used to provide direct current to your notebook and the battery is then recharged by the AC adapter that connects your laptop to the wall outlet. While the battery directly powers the notebook’s components, much like a power supply in a desktop, the battery doesn’t perform any transformation of the power it receives or sends out. These functions are handled by the AC adapter. Many docking stations provide the ability to either use the regular AC adapter as their power source, or use a built-in AC adapter to perform the transformation of the power from AC to DC. If the laptop is using a docking station, it still uses the battery to provide power to the laptop, and the docking station to charge the laptop’s battery. A </span><a aria-describedby="N1067F" class="extra" id=""></a>port replicator<span><span> </span>, on the other hand, requires the AC adapter to perform the transformation for it.</span><br/><br/><img alt="" height="232" src="./../images/image3 (2).png" width="552"/><br/><span>Docking station rear view. Photo used under CC-BY license from </span><a href="https://flic.kr/p/e6ZRAD" id="_i_1" lang="" target="_blank">Tolbxela</a><span>.</span><br/></span></p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
-<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span>Docking stations are used to add capabilities to a laptop and create a "desktop" experience. For example, in the image above, you can see that the docking station has numerous USB ports, a PS/2 port for keyboard/mouse, a modem port, Ethernet port, VGA and DVI display outputs, audio input and output ports, as well as serial and parallel connections. Some docking stations even have built-in hard drives and optical drives for additional storage. A port replicator, on the other hand, only provides the same ports that already exist on the laptop. This is used for quick connection and disconnection to the various external devices when the laptop is returned to the office environment.</span></span></p>
+    <div id="tipue_search_content">P21 << <a href='P21.html'>Previous</a> <a href='P20(PRACTICE).html'>Next</a> >> P20(PRACTICE)<br /><h1>P19(PRACTICE)</h1>
 <p><span></span></p>
-<h4><span>PCH19-交流電源</span></h4>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><br/>如前所述，電池用於為筆記本計算機提供直流電，然後通過將筆記本計算機連接至牆上插座的交流適配器為<br/>電池充電。儘管電池可以直接為筆記本計算機的組件供電，就像台式機中的電源一樣，但是電池不會對其接<br/>收或發出的電能進行任何轉換。這些功能由交流適配器處理。許多擴展塢都提供了使用常規AC適配器作為電<br/>源或使用內置AC適配器執行從AC到DC的電源轉換的功能。如果筆記本電腦使用的是擴展塢，它仍會使用電池<br/>為筆記本電腦供電，而擴展塢則使用筆記本電腦的電池充電。另一方面，端口復制器需要AC適配器為其執行<br/>轉換。</span></pre>
+<h4><span></span></h4>
+<h4><span>Decode A Web Page Two Solution  </span></h4>
+<h4><span></span>Exercise 19</h4>
 <p><span></span></p>
-<p><span><img alt="" height="232" src="./../images/image3 (2).png" width="552"/></span></p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">擴展塢後視圖。照片由Tolbxela根據CC-BY許可使用。</span></pre>
+<p>The<span> </span><a href="https://www.practicepython.org/exercise/2014/07/14/19-decode-a-web-page-two.html">How To Decode A Web Page Two</a><span> </span>exercise was a follow-up to the extremely challenging prelude,<span> </span><a href="https://www.practicepython.org/exercise/2014/06/06/17-decode-a-web-page.html">How To Decode A Web Page</a>. The purpose of the original (and the follow-up exercise) was to give people a chance to poke around at a close-to-real application of Python.</p>
+<p>A few people submitted solutions to this exercise (one example is given at the bottom of the page), and many of them used things that I haven’t yet talked about in the exercises. I will not go into extreme detail about how to solve this problem - I will just present the important points for one way you could solve this problem. For a more detailed solution to a similar problem, I encourage you to look at the<span> </span><a href="https://www.practicepython.org/solution/2014/07/10/17-decode-a-web-page-solutions.html">solution to the previous exercise (How To Decode A Web Page)</a>.</p>
+<p>And without further ado, a plan for achieving the solution:</p>
+<p>1.Use the<span> </span><code class="highlighter-rouge">requests</code><span> </span>library to load the HTML of the page into Python</p>
+<p>2.Find out which HTML tags contain the article text</p>
+<p>3.Use<span> </span><code class="highlighter-rouge">BeautifulSoup</code><span> </span>to process HTML and extract the text of the article</p>
+<p>4.Print the extracted text to the screen</p>
+<p>In my opinion, the difficult part of this exercise is figuring out the elements on the page (whether that is through HTML or CSS selectors) that contain all the text of the article. It requires knowing or exploring a little bit about CSS selectors and reading documentation. Such is the way of working with web pages.</p>
+<p>A few observations on that point:</p>
+<ul>
+<li>The entire text of the article is on this single page - no need to move to another URL. The text is placed inside “hidden containers” that are just set to invisible.</li>
+<li>It seems that article text comes inside<span> </span><code class="highlighter-rouge">p</code><span> </span>elements that are inside<span> </span><code class="highlighter-rouge">div</code><span> </span>elements of class<span> </span><code class="highlighter-rouge">body</code><span> </span>that are inside<span> </span><code class="highlighter-rouge">div</code><span> </span>elements that have classes<span> </span><code class="highlighter-rouge">parbase</code><span> </span>and<span> </span><code class="highlighter-rouge">cn_text</code>. But it also seems that there are other things like hyperlinks and article comments also fall inside this structure.</li>
+<li>When you select for this in<span> </span><code class="highlighter-rouge">BeautifulSoup</code>, the first 7 elements that come out are links and the introduction, so we just want to ignore those.</li>
+</ul>
+<p>Given these observations, this solution:</p>
+<pre>import requests
+from bs4 import BeautifulSoup
+
+base_url = "http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture"
+r = requests.get(base_url)
+soup = BeautifulSoup(r.text)
+
+all_p_cn_text_body = soup.select("div.parbase.cn_text &gt; div.body &gt; p")
+
+for elem in all_p_cn_text_body[7:]:
+  print(elem.text)</pre>
 <p><span></span></p>
-<pre><span>擴展塢用於向筆記本電腦添加功能並創建“桌面”體驗。例如，在上圖中，您可以看到擴展塢具有多個USB端口<br/>，一個用於鍵盤/鼠標的PS / 2端口，一個調製解調器端口，以太網端口，VGA和DVI顯示輸出，音頻輸入和<br/>輸出端口，如以及串行和並行連接。某些擴展塢甚至具有內置硬盤驅動器和光盤驅動器，用於額外存儲。另<br/>一方面，端口復制器僅提供筆記本電腦上已經存在的相同端口。當筆記本電腦返回辦公環境時，可用於快速<br/>連接和斷開與各種外部設備的連接。</span></pre>
+<p>prints to the screen the full text of the article.</p>
+<p>The CSS selectors are complex, and it takes some practice to get comfortable with them. We’ll re-visit this later (perhaps much later), but for now I encourage you to poke around the internet and look at sources of websites, playing with<span> </span><code class="highlighter-rouge">BeautifulSoup</code><span> </span>and figuring out how CSS selectors behave.</p>
+<p>Here is an example of a user-submitted solution that is not completely automated, and that does not use the exact article specified. However, it does show you that you can start solving your own problems using the techniques I am talking about on this blog.</p>
 <p><span></span></p>
-<br />Battery Types- << <a href='Battery Types-.html'>Previous</a> <a href='PCH19-Proper Disposal Procedures.html'>Next</a> >> PCH19-Proper Disposal Procedures</div>
+<pre>"""
+Using the requests and BeautifulSoup Python libraries, print to the screen the full text of the
+article on this website: http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture.
+http://www.practicepython.org/exercise/2014/07/14/19-decode-a-web-page-two.html
+"""
+
+import requests
+from bs4 import BeautifulSoup
+
+def print_to_text(base_url):
+    """
+    :param base_url: URL of article to scrape
+    :return: naked content to text file
+    """
+    r = requests.get(base_url)
+    soup = BeautifulSoup(r.text)
+    with open("work less.txt", "w") as textfile:
+        for paragraph in soup.find_all(dir="ltr"):
+            textfile.write(paragraph.text.replace("&lt;span&gt;",""))
+
+if __name__ == "__main__":
+    #Chose my own article
+    base_url = "http://www.theatlantic.com/business/archive/2014/08/to-work-better-work-less/375763/"
+    base_url2 = "http://www.theatlantic.com/business/archive/2014/08/to-work-better-work-less/375763/2/"
+    print_to_text(base_url)
+    print_to_text(base_url2)<br/><br/><br/></pre>
+<h4 class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">解碼網頁的兩種解決方案</span></h4>
+<h4><span>練習19</span></h4>
+<p><span></span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">如何對網頁進行解碼第二個練習是對極富挑戰性的前奏：如何對網頁進行解碼的後續工作。原始（和後續練<br/>習）的目的是使人們有機會在一個接近真實的Python應用程序中四處摸索。
+
+一些人提交了此練習的解決方案（頁面底部提供了一個示例），其中許多人使用的是我在練習中尚未談到的<br/>內容。我不會詳細介紹如何解決此問題-我僅介紹要點來解決這一問題的要點。有關類似問題的更詳細解決方<br/>案，建議您看一下上一練習（如何解碼網頁）的解決方案。</span></pre>
+<p><span></span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">事不宜遲，實現解決方案的計劃是：</span></pre>
+<p>1.<span lang="zh-TW">使用請求庫將頁面的HTML加載到Python中</span></p>
+<p>2.<span lang="zh-TW">找出哪些HTML標記包含文章文字</span></p>
+<p>3.<span lang="zh-TW">使用BeautifulSoup處理HTML並提取文章文本</span></p>
+<p>4.<span lang="zh-TW">將提取的文本打印到屏幕上</span></p>
+<p><span></span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">我認為，此練習的困難之處在於找出頁面上包含文章所有文本的元素（無論是通過HTML還是CSS選擇器）。它<br/>需要了解或探索一些有關CSS選擇器的知識並閱讀文檔。這是處理網頁的方式。
+
+關於這一點的一些觀察：<br/></span></pre>
+<ul>
+<li><span>文章的全文在此頁面上-無需移動到另一個URL。文本放在“隱藏容器”中，這些容器只是設置為不可見。</span></li>
+<li>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">似乎文章文本位於類主體的div元素內的p元素內，而p元素位於具有parbase和cn_text類的div元素</span></pre>
+</li>
+<li>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">內。但是似乎還存在諸如超鏈接和文章註釋之類的其他內容。</span></pre>
+</li>
+<li>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">當您在BeautifulSoup中為此選擇時，出現的前7個元素是鏈接和簡介，因此我們只想忽略它們。</span></pre>
+</li>
+</ul>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"> </span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">鑑於這些觀察，該解決方案：<br/></span></pre>
+<pre>import requests
+from bs4 import BeautifulSoup
+
+base_url = "http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture"
+r = requests.get(base_url)
+soup = BeautifulSoup(r.text)
+
+all_p_cn_text_body = soup.select("div.parbase.cn_text &gt; div.body &gt; p")
+
+for elem in all_p_cn_text_body[7:]:
+  print(elem.text)<br/><br/></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span>在屏幕上顯示文章的全文。 CSS選擇器很複雜，需要一些練習才能適應它們。我們稍後（也許以後）會再次<br/>進行討論，但現在，我鼓勵您在Internet上瀏覽並查看網站資源，與BeautifulSoup一起玩並弄清楚CSS選<br/>擇器的行為。 <br/><br/>這是一個用戶提交的解決方案的示例，該解決方案不是完全自動化的，並且沒有使用指定的確切文章。但是<br/>，它的確表明您可以使用我在此博客上談論的技術開始解決自己的問題。</span></span></pre>
+<pre>"""
+Using the requests and BeautifulSoup Python libraries, print to the screen the full text of the
+article on this website: http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture.
+http://www.practicepython.org/exercise/2014/07/14/19-decode-a-web-page-two.html
+"""
+
+import requests
+from bs4 import BeautifulSoup
+
+def print_to_text(base_url):
+    """
+    :param base_url: URL of article to scrape
+    :return: naked content to text file
+    """
+    r = requests.get(base_url)
+    soup = BeautifulSoup(r.text)
+    with open("work less.txt", "w") as textfile:
+        for paragraph in soup.find_all(dir="ltr"):
+            textfile.write(paragraph.text.replace("&lt;span&gt;",""))
+
+if __name__ == "__main__":
+    #Chose my own article
+    base_url = "http://www.theatlantic.com/business/archive/2014/08/to-work-better-work-less/375763/"
+    base_url2 = "http://www.theatlantic.com/business/archive/2014/08/to-work-better-work-less/375763/2/"
+    print_to_text(base_url)
+    print_to_text(base_url2</pre>
+<p><span></span></p>
+<p></p>
+<br />P21 << <a href='P21.html'>Previous</a> <a href='P20(PRACTICE).html'>Next</a> >> P20(PRACTICE)</div>
         
     <!-- footer -->
       <div class="container">
